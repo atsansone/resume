@@ -1,4 +1,4 @@
-/*
+﻿/*
 Copyright (c) 2011, Yahoo! Inc. All rights reserved.
 Code licensed under the BSD License:
 http://developer.yahoo.com/yui/license.html
@@ -6,9 +6,9 @@ version: 2.9.0
 */
 html {
   color:#000;
-  background:#FFF
+  background:#FFF;
 }
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td {
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td {
   margin:0;
   padding:0
 }
@@ -33,7 +33,7 @@ caption,th {
 }
 h1,h2,h3,h4,h5,h6 {
   font-size:100%;
-  font-weight:normal
+  font-weight:bold;
 }
 q:before,q:after {
   content:''
@@ -50,4 +50,56 @@ sub {
 }
 legend {
   color:#000
+}
+body {
+  margin:10;
+  padding:10;
+	font-family: pt-sans,tahoma,sans-serif;
+}
+h1 {
+  font-size: 150%;
+}
+h2 {
+  font-size: 120%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 110%;
+  margin-top: 10px;
+}
+ul {
+  margin: 20px;
+}
+ul li {
+  list-style:square;
+  margin-left: 20px;
+}
+table {
+  margin: 10px;
+	font-size: 80%;
+	width: 60%;
+	border: 1px solid #000;
+}
+td {
+	font-family: pt-sans,sans-serif;
+	padding: 2px;
+}
+.tk-pt-sans {
+	font-family: pt-sans,sans-serif;
+}
+.tools {
+  border: 1px solid #333;
+  background-color: #eee;
+  padding: 5px;
+  font-size: 80%;
+  margin-top: 5px;
+  margin-left: 45px;
+  text-indent: -45px;
+}
+.toolsfirst {
+  font-weight: 700;
+}
+.resumebody {
+  width: 60%;
 }
