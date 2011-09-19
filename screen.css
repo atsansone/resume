@@ -4,6 +4,7 @@ Code licensed under the BSD License:
 http://developer.yahoo.com/yui/license.html
 version: 2.9.0
 */
+/* Yahoo Reset Styles */
 html {
   color:#000;
   background:#FFF
@@ -51,3 +52,114 @@ sub {
 legend {
   color:#000
 }
+
+/* Styles - Anthony Sansone - 2011 Sep 13 */
+
+body {
+    margin: 20px;
+    font: 100% arial, sans-serif;
+}
+.resume {
+    width: 80%;
+    float: right;
+}
+ul li {
+    list-style-type: square;
+    margin-left: 20px;
+    font-size: 90%;
+}
+ul.job > li {
+    list-style-type: none;
+    margin-left: 0px;
+    float: left;
+}
+ul.job > li + li {
+    margin-left: 20px;
+    list-style-type: square;
+}
+.company {
+    font-size: 80%;
+    border-top: 1px solid #bbb;
+    margin-bottom: 5px;
+    clear: both;
+}
+ul.company {
+/*
+    float: right;
+    background-color: gray;
+*/
+    margin: 20px;
+}
+ul.company > li {
+    list-style-type: none;
+    margin-left: 0px;
+}
+ul.company > li + li {
+    margin-left: 20px;
+    list-style-type: square;
+}
+#contact {
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+}
+ul#contact > li {
+    list-style-type: none;
+    margin-left: 0px;
+    float: left;
+}
+ul#contact > li + li {
+    margin-left: 20px;
+    list-style-type: square;
+}
+ul#contact > li * {
+    clear: both;
+}
+ul.job > li * {
+    clear: all;
+}
+ul#contact {
+    margin-bottom: 10px;
+}
+.tools{
+    background-color: #eee;
+    padding: 5px;
+    margin: 10px 0px;
+    font-size: 80%;
+    border: 1px solid #ccc;
+}
+ul.tools > li {
+    list-style-type: none;
+    margin-left: 40px;
+    text-indent: -40px;
+}
+ul.tools > li > b {
+    font-weight: 700;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 20px;
+    font-weight: 700;
+    clear: both;
+}
+h1 {
+    font-size: 150%;
+}
+h2 {
+    font-size: 120%;
+}
+table {
+    border: 1px solid #ccc;
+}
+tr > td {
+    padding: 5px;
+    font-size: 80%;
+}
+td.skilldiv {
+    font-weight: 700;
+    background-color: #ccc;
+}tr > th {
+    padding: 5px;
+    font-size: 80%;
+    font-weight: 700;
+}
+
