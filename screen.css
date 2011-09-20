@@ -61,7 +61,6 @@ ul.company > li + li {
 
 ul#nav {
   position: fixed;
->>>>>>> inclass
   margin:0;
   padding:0;
   overflow:hidden;

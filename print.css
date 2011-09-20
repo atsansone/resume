@@ -8,6 +8,10 @@ body {
     font: 9pt/12pt arial, sans-serif;
 }
 
+ul#nav {
+  display:none;
+}
+
 h2 > ul {
   margin-left: 30pt;
 }
@@ -21,6 +25,13 @@ ul li {
   font-size: 9pt;
   line-height: 12pt;
 }
+ol li {
+  list-style-type: decimal;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
 ul.job > li {
   list-style-type: none;
   margin: 0pt;
