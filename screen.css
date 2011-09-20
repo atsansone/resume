@@ -1,59 +1,4 @@
-﻿/*
-Copyright (c) 2011, Yahoo! Inc. All rights reserved.
-Code licensed under the BSD License:
-http://developer.yahoo.com/yui/license.html
-version: 2.9.0
-*/
-/* Yahoo Reset Styles */
-html {
-  color:#000;
-  background:#FFF
-}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td {
-  margin:0;
-  padding:0;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-fieldset,img {
-  border:0
-}
-address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var {
-  font:inherit
-}
-del,ins {
-  text-decoration:none
-}
-li {
-  list-style:none
-}
-caption,th {
-  text-align:left
-}
-h1,h2,h3,h4,h5,h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-q:before,q:after {
-  content:''
-}
-abbr,acronym {
-  border:0;
-  font-variant:normal
-}
-sup {
-  vertical-align:baseline
-}
-sub {
-  vertical-align:baseline
-}
-legend {
-  color:#000
-}
-
-/* Styles - Anthony Sansone - 2011 Sep 13 */
+﻿/* Styles - Anthony Sansone - 2011 Sep 13 */
 
 body {
   margin: 20px;
@@ -75,6 +20,12 @@ ul li {
   font-size: 12px;
   line-height: 18px;
 }
+ol li {
+  list-style-type: decimal;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 18px;
+}
 ul.job > li {
   list-style-type: none;
   margin: 0px;
@@ -85,7 +36,7 @@ ul.job > li + li {
   list-style-type: square;
 }
 .company {
-  font-size: 10px;
+  font-size: 12px;
   border-top: 1px solid #bbb;
   margin-bottom: 5px;
   clear: both;
@@ -105,6 +56,55 @@ ul.company > li + li {
   margin-left: 20px;
   list-style-type: square;
 }
+
+/* Navigation Block */
+
+ul#nav {
+  position: fixed;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+ul#nav li {
+  list-style-type:none;
+  float:left;
+}
+ul#nav li a {
+  display:block;
+  width:120px;
+  font-weight:bold;
+  font-family: arial;
+  color:#fff;
+  background-color:#600;
+  text-align:center;
+  padding:4px;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+ul#nav li a:link,a:visited {
+  color:#fff;
+  background-color:#600;
+}
+/*
+ul#nav li a:link,a:visited {
+  display:block;
+  width:120px;
+  font-weight:bold;
+  font-family: arial;
+  color:#FFFFFF;
+  background-color:#98bf21;
+  text-align:center;
+  padding:4px;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+*/
+ul#nav li a:hover,a:active {
+  background-color:#900;
+  color: #fff;
+}
+
+
 
 /* Contact Details Block */
 
@@ -167,12 +167,12 @@ h1,h2,h3,h4,h5,h6 {
   clear: both;
 }
 h1 {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 36px;
 }
 h2 {
   color: #444;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
 }
 h3 {
@@ -198,7 +198,7 @@ table.skills tr > td + td {
 }
 tr > td {
   padding: 5px;
-  font-size: 70%;
+  font-size: 9px;
 }
 /*
 table.skills tr > td.skilldiv {
@@ -220,7 +220,7 @@ td.altrow {
 tr > th {
   background-color: #ccc;
   padding: 5px;
-  font-size: 70%;
+  font-size: 8px;
   font-weight: 700;
   text-align: center;
 }
@@ -230,22 +230,22 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   background-color:#fff;
 }
-a:link {
+.resume a:link {
   color: #333;
   text-decoration: none;
   border-bottom: 1px #666 dashed;
 }
-a:visited {
+.resume a:visited {
   color: #000;
   text-decoration: none;
 }
-a:focus {
+.resume a:focus {
   background-color: #eee;
 }
-a:hover {
+.resume a:hover {
   background-color: #eee;
 }
-a:active {
+.resume a:active {
   background-color: #000;
   color: #fff;
 }
