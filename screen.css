@@ -86,25 +86,10 @@ ul#nav li a:link,a:visited {
   color:#fff;
   background-color:#600;
 }
-/*
-ul#nav li a:link,a:visited {
-  display:block;
-  width:120px;
-  font-weight:bold;
-  font-family: arial;
-  color:#FFFFFF;
-  background-color:#98bf21;
-  text-align:center;
-  padding:4px;
-  text-decoration:none;
-  text-transform:uppercase;
-}
-*/
 ul#nav li a:hover,a:active {
   background-color:#900;
   color: #fff;
 }
-
 
 
 /* Contact Details Block */
@@ -126,29 +111,17 @@ ul#contact > li + li {
 ul#contact {
   margin-bottom: 30px;
 }
-/*
-hr {
-  border: 1px solid #bbb;
-  margin: 0px;
-}
-*/
 
-/*
-#contact ul > li * {
-  clear: both;
-}
-*/
 ul.job > li * {
-/*  border-top: 1px solid #bbb; */
   clear: both;
 }
 
+/* Job Tools Block */
 
 .tools {
   background-color: #eee;
   padding: 5px;
   margin-top: 10px;
-/*  margin-left: 20px; */
   border: 1px solid #ccc;
 }
 ul.tools > li {
@@ -181,6 +154,9 @@ h3 {
   font-size: 14px;
   line-height: 18px;
 }
+
+/* Skills Tables */
+
 table.skills {
   margin: 10px 0px;
   border: 1px solid #ccc;
@@ -201,13 +177,6 @@ tr > td {
   padding: 5px;
   font-size: 9px;
 }
-/*
-table.skills tr > td.skilldiv {
-  font-weight: 700;
-  background-color: #ddd;
-  text-indent: 0px;
-}
-*/
 table.skills tr.skilldiv {
   background-color: #ddd;
 }
@@ -215,6 +184,9 @@ table.skills tr.skilldiv > td {
   font-weight: 700;
   text-indent: 0px;
 }
+
+/* General Table Formats */
+
 td.altrow {
   background-color: #eee;
 }
@@ -225,12 +197,18 @@ tr > th {
   font-weight: 700;
   text-align: center;
 }
+
+/* CSS Widget for Project 2
 tr:nth-child(odd) {
   background-color:#eee;
 }
 tr:nth-child(even) {
   background-color:#fff;
 }
+*/
+
+/* General Link Formats */
+
 .resume a:link {
   color: #333;
   text-decoration: none;
@@ -249,5 +227,4 @@ tr:nth-child(even) {
 .resume a:active {
   background-color: #000;
   color: #fff;
->>>>>>> inclass
 }

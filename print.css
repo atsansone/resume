@@ -7,12 +7,14 @@ body {
 .resume {
     font: 9pt/12pt arial, sans-serif;
 }
+
 h2 > ul {
   margin-left: 30pt;
 }
 h2 > h3 {
   margin-left: 30pt;
 }
+
 ul li {
   list-style-type: square;
   margin-left: 20pt;
@@ -36,10 +38,6 @@ ul.job > li + li {
   clear: both;
 }
 ul.company {
-/*
-  float: right;
-  background-color: gray;
-*/
   margin: 10pt;
 }
 ul.company > li {
@@ -111,6 +109,7 @@ h3 {
   font-size: 10pt;
   line-height: 12pt;
 }
+
 table.skills {
   margin: 3pt 0pt;
   border: 1pt solid #ccc;
@@ -138,13 +137,7 @@ tr > th {
   font-weight: 700;
   text-align: center;
 }
-/*
-table.skills tr > td.skilldiv {
-  font-weight: 700;
-  background-color: #ddd;
-  text-indent: 0pt;
-}
-*/
+
 table.skills tr.skilldiv {
   background-color: #ddd;
 }
@@ -161,21 +154,22 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   background-color:#fff;
 }
-a:link {
+
+.resume a:link {
   color: #333;
   text-decoration: none;
 }
-a:visited {
+.resume a:visited {
   color: #000;
   text-decoration: none;
 }
-a:focus {
+.resume a:focus {
   background-color: #eee;
 }
-a:hover {
+.resume a:hover {
   background-color: #eee;
 }
-a:active {
+.resume a:active {
   background-color: #000;
   color: #fff;
 }
