@@ -1,105 +1,253 @@
-﻿/*
-Copyright (c) 2011, Yahoo! Inc. All rights reserved.
-Code licensed under the BSD License:
-http://developer.yahoo.com/yui/license.html
-version: 2.9.0
-*/
-html {
-  color:#000;
-  background:#FFF;
-}
-div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td {
-  margin:0;
-  padding:0
-}
-table {
-  border-collapse:collapse;
-  border-spacing:0
-}
-fieldset,img {
-  border:0
-}
-address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var {
-  font:inherit
-}
-del,ins {
-  text-decoration:none
-}
-li {
-  list-style:none
-}
-caption,th {
-  text-align:left
-}
-h1,h2,h3,h4,h5,h6 {
-  font-size:100%;
-  font-weight:bold;
-}
-q:before,q:after {
-  content:''
-}
-abbr,acronym {
-  border:0;
-  font-variant:normal
-}
-sup {
-  vertical-align:baseline
-}
-sub {
-  vertical-align:baseline
-}
-legend {
-  color:#000
-}
+﻿/* Styles - Anthony Sansone - 2011 Sep 13 */
+
 body {
-  margin:10;
-  padding:10;
-	font-family: pt-sans,tahoma,sans-serif;
-}
-h1 {
-  font-size: 150%;
-}
-h2 {
-  font-size: 120%;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-h3 {
-  font-size: 110%;
-  margin-top: 10px;
-}
-ul {
   margin: 20px;
+  font: 12px/18px arial, sans-serif;
+}
+.resume { /* Setting the resume to the right side */
+  width: 80%;
+  float: right;
+}
+h2 > ul {
+  margin-left: 30px;
+}
+h2 > h3 {
+  margin-left: 10px;
 }
 ul li {
-  list-style:square;
+  list-style-type: square;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 18px;
+}
+ol li {
+  list-style-type: decimal;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 18px;
+}
+ul.job > li {
+  list-style-type: none;
+  margin: 0px;
+  float: left;
+}
+ul.job > li + li {
+  margin-left: 20px;
+  list-style-type: square;
+}
+.company {
+  font-size: 12px;
+  border-top: 1px solid #bbb;
+  margin-bottom: 5px;
+  clear: both;
+}
+ul.company {
+/*
+  float: right;
+  background-color: gray;
+*/
+    margin: 20px;
+}
+ul.company > li {
+  list-style-type: none;
+  margin-left: 0px;
+}
+ul.company > li + li {
+  margin-left: 20px;
+  list-style-type: square;
+}
+
+/* Navigation Block */
+
+ul#nav {
+  position: fixed;
+>>>>>>> inclass
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+ul#nav li {
+  list-style-type:none;
+  float:left;
+}
+ul#nav li a {
+  display:block;
+  width:120px;
+  font-weight:bold;
+  font-family: arial;
+  color:#fff;
+  background-color:#600;
+  text-align:center;
+  padding:4px;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+ul#nav li a:link,a:visited {
+  color:#fff;
+  background-color:#600;
+}
+/*
+ul#nav li a:link,a:visited {
+  display:block;
+  width:120px;
+  font-weight:bold;
+  font-family: arial;
+  color:#FFFFFF;
+  background-color:#98bf21;
+  text-align:center;
+  padding:4px;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+*/
+ul#nav li a:hover,a:active {
+  background-color:#900;
+  color: #fff;
+}
+
+
+
+/* Contact Details Block */
+
+ul#contact {
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+ul#contact > li {
+  list-style-type: none;
+  margin-left: 0px;
+/*  display: inline; */
+  float: left;
+}
+ul#contact > li + li {
+  list-style-type: square;
   margin-left: 20px;
 }
-table {
-  margin: 10px;
-	font-size: 80%;
-	width: 60%;
-	border: 1px solid #000;
+ul#contact {
+  margin-bottom: 30px;
 }
-td {
-	font-family: pt-sans,sans-serif;
-	padding: 2px;
+/*
+hr {
+  border: 1px solid #bbb;
+  margin: 0px;
 }
-.tk-pt-sans {
-	font-family: pt-sans,sans-serif;
+*/
+
+/*
+#contact ul > li * {
+  clear: both;
 }
+*/
+ul.job > li * {
+/*  border-top: 1px solid #bbb; */
+  clear: both;
+}
+
+
 .tools {
-  border: 1px solid #333;
   background-color: #eee;
   padding: 5px;
-  font-size: 80%;
-  margin-top: 5px;
-  margin-left: 45px;
-  text-indent: -45px;
+  margin-top: 10px;
+/*  margin-left: 20px; */
+  border: 1px solid #ccc;
 }
-.toolsfirst {
+ul.tools > li {
+  list-style-type: none;
+  font-size: 9px;
+  line-height: 12px;
+  margin-left: 40px;
+  text-indent: -40px;
+}
+ul.tools > li > b {
   font-weight: 700;
 }
-.resumebody {
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 20px;
+  font-weight: 700;
+  clear: both;
+}
+h1 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h2 {
+  color: #444;
+  font-size: 18px;
+  line-height: 24px;
+}
+h3 {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+}
+table.skills {
+  margin: 10px 0px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+table.skills tr > td {
   width: 60%;
+  text-indent: 10px;
+  line-height: 12px;
+}
+table.skills tr > td + td {
+  text-align: center;
+  width: 15%;
+  text-indent: 0px;
+  line-height: 12px;
+}
+tr > td {
+  padding: 5px;
+  font-size: 9px;
+}
+/*
+table.skills tr > td.skilldiv {
+  font-weight: 700;
+  background-color: #ddd;
+  text-indent: 0px;
+}
+*/
+table.skills tr.skilldiv {
+  background-color: #ddd;
+}
+table.skills tr.skilldiv > td {
+  font-weight: 700;
+  text-indent: 0px;
+}
+td.altrow {
+  background-color: #eee;
+}
+tr > th {
+  background-color: #ccc;
+  padding: 5px;
+  font-size: 8px;
+  font-weight: 700;
+  text-align: center;
+}
+tr:nth-child(odd) {
+  background-color:#eee;
+}
+tr:nth-child(even) {
+  background-color:#fff;
+}
+.resume a:link {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px #666 dashed;
+}
+.resume a:visited {
+  color: #000;
+  text-decoration: none;
+}
+.resume a:focus {
+  background-color: #eee;
+}
+.resume a:hover {
+  background-color: #eee;
+}
+.resume a:active {
+  background-color: #000;
+  color: #fff;
+>>>>>>> inclass
 }
